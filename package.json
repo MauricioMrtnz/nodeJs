@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon 2.Api-Express/1.http.js"
+    "dev1": "nodemon 2.Api-Express/1.http.js",
+    "dev2": "nodemon 2.Api-Express/2.rutas.js",
+    "dev3": "node --watch 3.Api-Express/3.expres.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,8 @@
   },
   "eslintConfig": {
     "extends": "standard"
+  },
+  "dependencies": {
+    "express": "4.19.2"
   }
 }

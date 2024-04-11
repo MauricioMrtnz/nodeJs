@@ -1,0 +1,12 @@
+### Get all pokemons
+GET http://localhost:1234/pokemon/ditto
+
+### Create a new pokemon
+POST http://localhost:1234/pokemon
+Content-Type: application/json
+
+{
+  "name": "ditto",
+  "type": "normal"
+}
+
