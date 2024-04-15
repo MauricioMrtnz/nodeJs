@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" >
+    fetch('http://localhost:3000/movies')
+    .then(response => response.json())
+    .then(movies => {
+        const html = movies.map(movie => {
+            return `
+                <div>
+                    <h1>${movie.title}</h1>
+                    img src="${movie.poster}" alt="${movie.title}" width="100" height="100">
+                    <p>${movie.director}</p>
+                </div>
+            `
+        }).join('')
+        document.body.innerHTML = html
+    })
+
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

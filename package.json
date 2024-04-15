@@ -6,7 +6,8 @@
   "scripts": {
     "dev1": "nodemon 2.Api-Express/1.http.js",
     "dev2": "nodemon 2.Api-Express/2.rutas.js",
-    "dev3": "node --watch 3.Api-Express/3.expres.js"
+    "dev3": "node --watch 2.Api-Express/expres.js",
+    "dev4": "node --watch 3.Api-rest/app.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "extends": "standard"
   },
   "dependencies": {
-    "express": "4.19.2"
+    "express": "4.19.2",
+    "zod": "3.22.4"
   }
 }
